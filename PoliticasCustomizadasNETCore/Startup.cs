@@ -33,7 +33,7 @@ namespace PoliticasCustormizadasNETCore
             services.AddAuthorization(options =>
             {
                options.AddPolicy("PoliticaPontuacao", policy =>
-                    policy.Requirements.Add(new PontuacaoRequirement(5100)));
+                    policy.Requirements.Add(new PontuacaoRequirement(5000)));
             });
 
             services.AddSingleton<IAuthorizationHandler, PontuacaoNecessariaHandler>();
